@@ -16,6 +16,20 @@ function makeNegative(num) {
 }
 
 /* 
+Dope Alternative Code Wars Solutions and Why I like them
+
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+I like the above because it illustrates using the Math library in JavaScript which is really hopeful to no
+
+makeNegative = n => -Math.abs(n)
+I like the above because it uses a simple pass through function as reviewed with some of the React code I've worked on before
+
+*/
+
+/* 
 Testing console log to view in node output
 console.log(makeNegative(-3))
 console.log(makeNegative(3))
