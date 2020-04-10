@@ -17,6 +17,15 @@ console.log( removeChar("Woman"))
 /* 
 Dope Alternative Code Wars Solutions and Why I like them
 
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+I like this because it's smoother. This was really helpful and reading through the comments on this it seems that the - in front of the integer here offsets it to the length of your starting position. When you use -1 it will go -1 spaces to the left of the length.
+
+const removeChar = str => str.slice(1,-1)
+I like this because i like arrowfunction and seeing the difference between this one and the one below it.
+
+removeChar = str => str.slice(1,-1)
 
 */
    
