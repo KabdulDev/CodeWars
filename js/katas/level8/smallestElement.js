@@ -13,19 +13,23 @@ Date Created: 2020.04.08
 Date Modified: 2020.04.08
 */
 
-//class SmallestIntegerFinder {
-    function findSmallestInt(args) {
+class SmallestIntegerFinder {
+    findSmallestInt(args) { //Since this method is alled without static this is a Public instance Method. These methods will than be called off of new specific objects of the class. Like the instance we see below for testing.
         let small = args[0];
         for (let i=0; i<args.length; i++){
             small < args[i] ? small : small=args[i];
-            /* console.log(i);
-            console.log(small) */
+        
         }
         return small
     }
     
 
 
-  //}
-  console.log(findSmallestInt([1,2,3,-6,9,-2]))
-  console.log(findSmallestInt([0, 200, 5, 30]))
+  }
+
+  //For the record and for testing. An exhibition of the Public instance Method seen above.
+ /*  
+const instance = new SmallestIntegerFinder
+console.log(instance.findSmallestInt([1,2,3,-6,9,-2])) 
+*/
+  
