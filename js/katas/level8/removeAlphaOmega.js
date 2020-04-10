@@ -13,4 +13,10 @@ function removeChar(str){
    };
 
 console.log( removeChar("Woman"))
+
+/* 
+Dope Alternative Code Wars Solutions and Why I like them
+
+
+*/
    
