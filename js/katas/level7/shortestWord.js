@@ -10,7 +10,7 @@ Date Created: 2020.04.24
 Date Modified: 2020.04.24
 */
 
-const findShort = s => {
+const findShort = s => s.split(" ").map(i => i.length).sort((a,b) => a-b)[0];
 
     //Psuedo Code description of problem
 
@@ -28,8 +28,7 @@ const findShort = s => {
      */
     //Let's break this into a one-liner!
 
-    return s.split(" ").map(i => i.length).sort((a,b) => a-b)[0];
 
-}
+
 
 console.log(findShort("Does any one have three dollars for meek"));
