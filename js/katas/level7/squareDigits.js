@@ -18,9 +18,24 @@ const squareDigits = num => {
     //take num as an argument of squareDigits - done
 
 
-    //split the value of num into an array with each single digit being it's own element
-    //square each digit in array
+    /* //split the value of num into an array with each single digit being it's own element - done
+    let singleDigits=num.toString().split('');
+    //square each digit in array (can act on each element individually via a for loop or through a map)
+    let squaredDigits = singleDigits.map(i => i*i);
     //use join to return one big happy family
-    //ensure that returned family is an integer - Yay!
+    squaredDigits.join('');
+    //ensure that returned family is an integer - Yay! - had to review parseInt, but it worked - 
+    return Number.parseInt(squaredDigits.join(''), 10); 
+    Now let's make this cleaner!
+    */
 
+    //Let's combine All of the above into 1 line
+
+    return Number.num.toSring().split('').map(i=> i*i).join('');
+
+
+
+    
 }
+
+console.log(squareDigits(52));
