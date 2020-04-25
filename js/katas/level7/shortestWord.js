@@ -28,6 +28,27 @@ const findShort = s => s.split(" ").map(i => i.length).sort((a,b) => a-b)[0];
      */
     //Let's break this into a one-liner!
 
+/* 
+Dope Alternative Code Wars Solutions and Why I like them
+
+function findShort(s){
+    return Math.min(...s.split(" ").map (s => s.length));
+}
+
+//I like the above because of they use the vastly simpler Math.min also a good use and reminder of spreader
+
+
+const findShort = (s) => s
+  .split(' ')
+  .sort((a, b) => b.length - a.length)
+  .pop()
+  .length;
+
+  //I like the above because it's a great reminder to constantly format code and make sure it's pretty
+
+
+*/
+
 
 
 
