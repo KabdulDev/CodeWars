@@ -12,7 +12,7 @@ Date Created: 2020.04.24
 Date Modified: 2020.04.24
 */
 
-const squareDigits = num => {
+const squareDigits = num => Number(num.toString().split('').map(i=> i*i).join(''));
     //Psuedo Code breakdown
     //Goal of code: take some number and square all of the digits in that number and concatenate all of the results into one super number
     //take num as an argument of squareDigits - done
@@ -29,13 +29,24 @@ const squareDigits = num => {
     Now let's make this cleaner!
     */
 
-    //Let's combine All of the above into 1 line
+    //Let's combine All of the above into 1 line - after searching docs f
 
-    return Number.num.toSring().split('').map(i=> i*i).join('');
+    //Number(num.toString().split('').map(i=> i*i).join(''));
 
+/* 
+Dope Alternative Code Wars Solutions and Why I like them
 
-
-    
+function squareDigits(num){
+  return +num.toString().split('').map(i => i*i).join('');
 }
 
-console.log(squareDigits(52));
+//I like the above because of the alternate way of handling type conversion with the starting +; simplified things greatly
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger
+
+
+*/
+
+    
+
+
+console.log(squareDigits(8654));
