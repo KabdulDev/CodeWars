@@ -24,7 +24,14 @@ Date Created: 2020.04.26
 Date Modified: 2020.04.27
 */
 
-const songDecoder = song => {
+const songDecoder = (song) =>
+  song
+    .split("WUB")
+    .filter((noWub) => noWub != "")
+    .join(" ");
+    
+    
+/*     
     //Psuedo code time everybody. So this dubstep is a fun one.
 
     //First get some function (or constant) songDecoder that takes song as an input. -done
@@ -38,6 +45,8 @@ const songDecoder = song => {
     let ogSong = noWubClean.join(" ")
     return ogSong;
 
-}
+    //Let's reduced to an effective one line
+
+ */
 
 console.log(songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"))
