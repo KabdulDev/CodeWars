@@ -29,8 +29,7 @@ const songDecoder = (song) =>
     .split("WUB")
     .filter((noWub) => noWub != "")
     .join(" ");
-    
-    
+
 /*     
     //Psuedo code time everybody. So this dubstep is a fun one.
 
@@ -49,4 +48,23 @@ const songDecoder = (song) =>
 
  */
 
-console.log(songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"))
+/* 
+Dope Alternative Code Wars Solutions and Why I like them
+
+function songDecoder(song){
+  return song.replace(/(WUB)+/g," ").trim()
+}
+
+//This solution is just smooth and smart as all hell. Need to get my trim game up.
+
+
+function songDecoder(song){
+  return song.split('WUB').filter(Boolean).join(' ');
+}
+
+  //Super similar to the answer i thought, but their filter is simpler because empty strings evaluate to false, thus Boolean works just fine. Super smart and worth remembering.
+
+
+*/
+
+console.log(songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"));
